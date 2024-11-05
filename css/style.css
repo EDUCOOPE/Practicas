@@ -234,40 +234,19 @@ code {
   overflow: hidden; /* Cambiar a hidden para evitar el scroll */
 }
 
-@media (max-width: 768px) {
-  .timeline-items {
-    flex-direction: column; /* Cambia a columna en móviles */
-  }
+/* Estilo para la barra de navegación */
+.navbar {
+  position: sticky; /* Fija la barra en la parte superior al hacer scroll */
+  top: 0; /* Se queda en la parte superior */
+  z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
 
-  .timeline-item {
-    width: 100%;
-    padding: 0 15px; /* Espacio lateral */
-    text-align: center; /* Centrado de texto */
-  }
+/* Ajustar el botón de hamburguesa para que esté siempre en la parte superior */
+.navbar-toggler {
+  margin-right: 15px; /* Añade un margen a la derecha para evitar que se pegue */
+}
 
-  .timeline-item:nth-child(odd),
-  .timeline-item:nth-child(even) {
-    padding: 0; /* Quita el padding en móviles */
-  }
-
-  .timeline-dot {
-    left: 50%; /* Centra los puntos */
-    transform: translateX(-50%); /* Ajusta el punto al centro */
-  }
-
-  .logo-grid img {
-    max-width: 80%; /* Reduce el tamaño de las imágenes */
-  }
-
-  .iframe-container {
-    padding-top: 75%; /* Cambia el aspecto en móviles */
-  }
-
-  .logo-grid {
-    flex-direction: column; /* Apila las imágenes en móviles */
-  }
-
-  .logo-grid img {
-    max-width: 100px; /* Máximo tamaño de imagen en móviles */
-  }
+/* Opcional: ajustar el espaciado interno de la barra de navegación */
+.navbar .container-fluid {
+  padding: 0 15px; /* Controla el espaciado interno de la barra de navegación */
 }
