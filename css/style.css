@@ -233,20 +233,3 @@ code {
   border: none;
   overflow: hidden; /* Cambiar a hidden para evitar el scroll */
 }
-
-/* Estilo para la barra de navegación */
-.navbar {
-  position: sticky; /* Fija la barra en la parte superior al hacer scroll */
-  top: 0; /* Se queda en la parte superior */
-  z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
-}
-
-/* Ajustar el botón de hamburguesa para que esté siempre en la parte superior */
-.navbar-toggler {
-  margin-right: 15px; /* Añade un margen a la derecha para evitar que se pegue */
-}
-
-/* Opcional: ajustar el espaciado interno de la barra de navegación */
-.navbar .container-fluid {
-  padding: 0 15px; /* Controla el espaciado interno de la barra de navegación */
-}
