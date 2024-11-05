@@ -12,7 +12,7 @@ body {
 
 .four h1 {
   text-align: center;
-  /*padding-bottom: 0.1em;*/
+  padding-bottom: 0.1em;
   color: #e40d2c;
 }
 
@@ -52,7 +52,7 @@ body {
   content: "";
   position: absolute;
   width: 2px;
-  height: calc(100% - 30px); /* Ajuste para dejar espacio para los puntos */
+  height: calc(80% - 30px); /* Ajuste para dejar espacio para los puntos */
   background-color: #2f363e;
   left: calc(50% - 1px);
   top: 15px; /* Ajuste para centrar la línea entre los puntos */
@@ -179,4 +179,29 @@ body {
   .timeline-dot {
     left: 0;
   }
+}
+
+/* Estilos para el iframe de el docuemnto de los convenios */
+.iframe-container {
+  position: relative;
+  padding-top: 56.25%; /* Aspect ratio 16:9 */
+  overflow: hidden;
+  background-color: #f4f4f4;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  margin: 0 auto 20px auto;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(
+    100% - 20px
+  ); /* Ajusta para asegurar que no exceda el contenedor */
+  border: none;
+  overflow: hidden; /* Cambiar a hidden para evitar el scroll */
 }
