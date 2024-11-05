@@ -24,6 +24,34 @@ body {
   color: rgba(15, 16, 15, 0.5);
 }
 
+.text-muted {
+  text-align: justify; /* Justificar el texto */
+  line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+/* Estilo para el acordeón */
+.accordion-body {
+  text-align: justify; /* Justifica el texto */
+  font-family: "Poppins", sans-serif; /* Cambia el tipo de letra solo para el acordeón */
+  padding: 15px; /* Espaciado interno */
+  background-color: #f8f9fa; /* Fondo opcional */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo adicional para el texto dentro del acordeón */
+.accordion-body strong {
+  display: block; /* Asegura que el texto en negrita esté en su propia línea */
+  margin-bottom: 10px; /* Espacio debajo del texto en negrita */
+}
+
+code {
+  display: block; /* Asegura que el código esté en su propia línea */
+  margin-top: 10px; /* Espacio encima del código */
+  background-color: #e9ecef; /* Fondo para el código */
+  padding: 5px; /* Espaciado interno para el código */
+  border-radius: 3px; /* Bordes redondeados para el código */
+}
+
 /* .four h1:before {
     position: absolute;
     left: 0;
